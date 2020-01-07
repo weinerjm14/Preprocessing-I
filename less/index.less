@@ -54,6 +54,60 @@ table {
 }
 
 html, body {
-    height: 100%;
+	height: 100%;
 }
-
+// Set fonts and container size
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Amita', cursive;
+	font-size: 2.4rem;
+}
+p, li {
+	font-family: 'Solway', serif;
+	font-size: 1.8rem;
+}
+html {
+	font-size: 62.5%;
+	
+}
+.container{
+	width: 80%;
+	margin: 0 auto;
+}
+// Begin styling
+.flex-center {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+header {//begin header styling
+	
+	border: solid;
+	height: 10vh;
+	nav {//begin nav style
+		display: flex;
+		justify-content: space-evenly;
+		a {//begin link stlye
+			width: 22%;
+			text-decoration: none;
+			font-size: 1.6rem;
+			margin-top: 3%;
+		}//end link stlye
+	}//end nav style
+}//end header styling
+.intro { //begin intro section style
+	display: flex;
+	justify-content: space-between;
+	img {
+		width: 40%;
+	}	
+	.intro-div {
+		border: solid;
+		width: 40%;
+	}	
+}//end intro section stlye
+.skills {//beginning of skills styles
+	h2 {
+		text-align: center;
+		padding: 3% 0;
+	}
+}//end of skills styles
