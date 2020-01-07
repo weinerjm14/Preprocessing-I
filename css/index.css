@@ -134,6 +134,9 @@ html,
 body {
   height: 100%;
 }
+html {
+  font-size: 62.5%;
+}
 h1,
 h2,
 h3,
@@ -142,14 +145,12 @@ h5,
 h6 {
   font-family: 'Amita', cursive;
   font-size: 2.4rem;
+  color: #29011c;
 }
 p,
 li {
   font-family: 'Solway', serif;
   font-size: 1.8rem;
-}
-html {
-  font-size: 62.5%;
 }
 .container {
   width: 80%;
@@ -160,32 +161,169 @@ html {
   justify-content: center;
   align-items: center;
 }
-header {
-  border: solid;
-  height: 10vh;
+.primary-color {
+  background-color: #29011c;
+  color: #ffffff;
 }
-header nav {
+.secondary-color {
+  background-color: #DCDCDC;
+}
+.heading-adjust {
+  text-align: center;
+  padding: 3% 0;
+}
+.container header {
+  height: 15vh;
+  background-color: #29011c;
+}
+@media (max-width: 500px) {
+  .container header {
+    height: 30vh;
+  }
+}
+.container header nav {
   display: flex;
   justify-content: space-evenly;
 }
-header nav a {
-  width: 22%;
+@media (max-width: 500px) {
+  .container header nav {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.container header nav a {
+  color: #ffffff;
+  width: 24%;
   text-decoration: none;
   font-size: 1.6rem;
   margin-top: 3%;
+  text-align: center;
 }
-.intro {
+.container #intro {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  background-color: #DCDCDC;
 }
-.intro img {
-  width: 40%;
+@media (max-width: 500px) {
+  .container #intro {
+    flex-direction: column;
+  }
 }
-.intro .intro-div {
-  border: solid;
-  width: 40%;
+.container #intro img {
+  width: 45%;
+  margin: 0 0 0 5%;
 }
-.skills h2 {
+@media (nax-width: 500px) {
+  .container #intro img {
+    width: 80%;
+  }
+}
+.container #intro .intro-div {
+  width: 45%;
+  padding: 0 2%;
+}
+@media (max-width: 500px) {
+  .container #intro .intro-div {
+    width: 80%;
+    margin: 0 auto;
+    padding-bottom: 6%;
+  }
+}
+.container #intro .intro-div h1 {
   text-align: center;
   padding: 3% 0;
+}
+.container #about h2 {
+  text-align: center;
+  padding: 3% 0;
+}
+@media (max-width: 500px) {
+  .container #about h2 {
+    padding: 5% 0;
+  }
+}
+.container #about p {
+  text-align: center;
+  margin: 2% 3%;
+}
+@media (max-width: 500px) {
+  .container #about p {
+    margin-bottom: 5%;
+  }
+}
+.container #skills {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #DCDCDC;
+}
+@media (max-width: 500px) {
+  .container #skills {
+    padding-bottom: 4%;
+  }
+}
+.container #skills h2 {
+  text-align: center;
+  padding: 3% 0;
+}
+@media (max-width: 500px) {
+  .container #skills h2 {
+    padding: 5% 0;
+  }
+}
+.container #skills ul {
+  width: 80%;
+  text-align: center;
+}
+.container #skills ul li {
+  padding: 1% 1% 2% 0;
+  color: #29011c;
+  font-weight: bold;
+}
+@media (max-width: 500px) {
+  .container #skills ul li {
+    padding-bottom: 5%;
+  }
+}
+.container #skills ul li i {
+  color: #29011c;
+}
+.container #contact {
+  padding-bottom: 3%;
+}
+@media (max-width: 500px) {
+  .container #contact {
+    padding-bottom: 5%;
+    padding-top: 3%;
+  }
+}
+.container #contact h2 {
+  text-align: center;
+  padding: 3% 0;
+}
+.container #contact li {
+  text-align: center;
+  text-decoration: none;
+  padding: 1% 0;
+}
+@media (max-width: 500px) {
+  .container #contact li {
+    padding-bottom: 3%;
+  }
+}
+.container footer {
+  background-color: #29011c;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.6rem;
+  text-align: center;
+  height: 15vh;
+}
+@media (max-width: 500px) {
+  .container footer {
+    height: 8vh;
+  }
 }
