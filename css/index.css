@@ -145,7 +145,6 @@ h5,
 h6 {
   font-family: 'Amita', cursive;
   font-size: 2.4rem;
-  color: #29011c;
 }
 p,
 li {
@@ -162,7 +161,7 @@ li {
   align-items: center;
 }
 .primary-color {
-  background-color: #29011c;
+  background-color: #c3b299;
   color: #ffffff;
 }
 .secondary-color {
@@ -174,7 +173,7 @@ li {
 }
 .container header {
   height: 15vh;
-  background-color: #29011c;
+  background-color: #c3b299;
 }
 @media (max-width: 500px) {
   .container header {
@@ -189,6 +188,7 @@ li {
   .container header nav {
     flex-direction: column;
     align-items: center;
+    justify-content: center;
   }
 }
 .container header nav a {
@@ -198,6 +198,12 @@ li {
   font-size: 1.6rem;
   margin-top: 3%;
   text-align: center;
+}
+@media (max-width: 500px) {
+  .container header nav a {
+    width: 85%;
+    margin-top: 5%;
+  }
 }
 .container #intro {
   display: flex;
@@ -233,10 +239,12 @@ li {
 .container #intro .intro-div h1 {
   text-align: center;
   padding: 3% 0;
+  color: #c3b299;
 }
 .container #about h2 {
   text-align: center;
   padding: 3% 0;
+  color: #c3b299;
 }
 @media (max-width: 500px) {
   .container #about h2 {
@@ -266,6 +274,7 @@ li {
 .container #skills h2 {
   text-align: center;
   padding: 3% 0;
+  color: #c3b299;
 }
 @media (max-width: 500px) {
   .container #skills h2 {
@@ -278,7 +287,7 @@ li {
 }
 .container #skills ul li {
   padding: 1% 1% 2% 0;
-  color: #29011c;
+  color: #000000;
   font-weight: bold;
 }
 @media (max-width: 500px) {
@@ -287,7 +296,7 @@ li {
   }
 }
 .container #skills ul li i {
-  color: #29011c;
+  color: #c3b299;
 }
 .container #contact {
   padding-bottom: 3%;
@@ -301,6 +310,7 @@ li {
 .container #contact h2 {
   text-align: center;
   padding: 3% 0;
+  color: #c3b299;
 }
 .container #contact li {
   text-align: center;
@@ -312,8 +322,12 @@ li {
     padding-bottom: 3%;
   }
 }
+.container #contact li a {
+  text-decoration: none;
+  color: #000000;
+}
 .container footer {
-  background-color: #29011c;
+  background-color: #c3b299;
   color: #ffffff;
   display: flex;
   align-items: center;

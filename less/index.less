@@ -64,7 +64,6 @@ html {
 h1, h2, h3, h4, h5, h6 {
 	font-family: 'Amita', cursive;
 	font-size: 2.4rem;
-	color: #29011c;
 }
 p, li {
 	font-family: 'Solway', serif;
@@ -76,7 +75,7 @@ p, li {
 	margin: 0 auto;
 }
 // Begin styling
-@center-text: center;
+@main-color: #c3b299;
 //mixins
 .flex-center {
 	display: flex;
@@ -84,11 +83,11 @@ p, li {
 	align-items: center;
 }
 .primary-color{
-	background-color: #29011c;
+	background-color: #c3b299;
 	color: #ffffff;
 }
 .secondary-color{
-	background-color: #DCDCDC	;
+	background-color: #DCDCDC;
 }
 .heading-adjust {
 	text-align: center;
@@ -99,7 +98,7 @@ p, li {
 .container {
 header {//begin header styling
 	height: 15vh;
-	background-color: #29011c;
+	background-color:#c3b299;
 	@media (max-width: 500px) {
 		height: 30vh;
 	}
@@ -110,6 +109,7 @@ header {//begin header styling
 		@media (max-width: 500px){
 			flex-direction: column;
 			align-items: center;
+			justify-content: center;
 		}
 		a {//begin link stlye
 			color: #ffffff;
@@ -118,6 +118,10 @@ header {//begin header styling
 			font-size: 1.6rem;
 			margin-top: 3%;
 			text-align: center;
+			@media(max-width: 500px) {
+				width: 85%;
+				margin-top: 5%;
+			}
 		}//end link stlye
 	}//end nav style
 }//end header styling
@@ -146,14 +150,17 @@ header {//begin header styling
 		}
 		h1 {
 			.heading-adjust();
+			color: @main-color;
 		}
 	}	
 }//end intro section stlye
 #about {//start of about styles
 	h2 {
 		.heading-adjust();
+		color: @main-color;
 		@media (max-width: 500px){
 			padding: 5% 0;
+			
 		}
 		
 	}
@@ -175,6 +182,7 @@ header {//begin header styling
 	.secondary-color();
 	h2 { //begin h2 style
 		.heading-adjust();
+		color: @main-color;
 		@media (max-width: 500px){
 			padding: 5% 0;
 		}
@@ -185,13 +193,13 @@ header {//begin header styling
     	text-align: center;
 	li {//begin list item style
 		padding: 1% 1% 2% 0;
+		color: #000000;
+		font-weight: bold;
 		@media (max-width: 500px){
 			padding-bottom: 5%;
 		}
-		color: #29011c;
-		font-weight: bold;
 		i {
-			color: #29011c;
+			color: #c3b299;
 		}
 	}//end list item style
 }//end list style
@@ -204,6 +212,7 @@ header {//begin header styling
 	}
 		h2 {
 		.heading-adjust();
+		color: @main-color;
 	}
 	li {
 		text-align: center;
@@ -211,6 +220,10 @@ header {//begin header styling
 		padding: 1% 0;
 		@media (max-width: 500px){
 			padding-bottom: 3%;
+		}
+		a {
+			text-decoration: none;
+			color: #000000
 		}
 	}
 }//end contact styles
