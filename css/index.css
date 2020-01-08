@@ -137,20 +137,6 @@ body {
 html {
   font-size: 62.5%;
 }
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: 'Amita', cursive;
-  font-size: 2.4rem;
-}
-p,
-li {
-  font-family: 'Solway', serif;
-  font-size: 1.8rem;
-}
 .container {
   width: 80%;
   margin: 0 auto;
@@ -165,7 +151,7 @@ li {
   color: #ffffff;
 }
 .secondary-color {
-  background-color: #DCDCDC;
+  background-color: #F5F5F5;
 }
 .heading-adjust {
   text-align: center;
@@ -183,6 +169,8 @@ li {
 .container header nav {
   display: flex;
   justify-content: space-evenly;
+  font-family: 'Solway', serif;
+  font-size: 1.8rem;
 }
 @media (max-width: 500px) {
   .container header nav {
@@ -193,7 +181,7 @@ li {
 }
 .container header nav a {
   color: #ffffff;
-  width: 24%;
+  width: 19%;
   text-decoration: none;
   font-size: 1.6rem;
   margin-top: 3%;
@@ -209,7 +197,7 @@ li {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #DCDCDC;
+  background-color: #F5F5F5;
 }
 @media (max-width: 500px) {
   .container #intro {
@@ -240,11 +228,19 @@ li {
   text-align: center;
   padding: 3% 0;
   color: #c3b299;
+  font-family: "Amita", serif;
+  font-size: 2.8rem;
+}
+.container #intro .intro-div p {
+  font-family: 'Solway', serif;
+  font-size: 1.8rem;
 }
 .container #about h2 {
   text-align: center;
   padding: 3% 0;
   color: #c3b299;
+  font-family: "Amita", serif;
+  font-size: 2.6rem;
 }
 @media (max-width: 500px) {
   .container #about h2 {
@@ -253,6 +249,8 @@ li {
 }
 .container #about p {
   text-align: center;
+  font-family: 'Solway', serif;
+  font-size: 1.8rem;
   margin: 2% 3%;
 }
 @media (max-width: 500px) {
@@ -264,7 +262,7 @@ li {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #DCDCDC;
+  background-color: #F5F5F5;
 }
 @media (max-width: 500px) {
   .container #skills {
@@ -275,6 +273,8 @@ li {
   text-align: center;
   padding: 3% 0;
   color: #c3b299;
+  font-family: "Amita", serif;
+  font-size: 2.6rem;
 }
 @media (max-width: 500px) {
   .container #skills h2 {
@@ -284,8 +284,13 @@ li {
 .container #skills ul {
   width: 80%;
   text-align: center;
+  font-family: 'Solway', serif;
+  font-size: 1.8rem;
 }
 .container #skills ul li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding: 1% 1% 2% 0;
   color: #000000;
   font-weight: bold;
@@ -297,8 +302,46 @@ li {
 }
 .container #skills ul li i {
   color: #c3b299;
+  padding-right: 2%;
+}
+.container #work {
+  padding-bottom: 3%;
+}
+.container #work h2 {
+  text-align: center;
+  padding: 3% 0;
+  font-family: "Amita", serif;
+  font-size: 2.6rem;
+  color: #c3b299;
+}
+.container #work h3 {
+  font-family: "Amita", serif;
+  font-size: 2.2rem;
+  padding-bottom: 1%;
+}
+.container #work p {
+  font-family: 'Solway', serif;
+  font-size: 1.8rem;
+  padding-bottom: 2%;
+}
+.container #work ul {
+  font-family: 'Solway', serif;
+  font-size: 1.8rem;
+  list-style-type: disc;
+  list-style-position: inside;
+}
+.container #work li {
+  padding-bottom: 1%;
+}
+.container #work .exp1 {
+  padding-bottom: 3%;
+  margin: 0 2%;
+}
+.container #work .exp2 {
+  margin: 0 2%;
 }
 .container #contact {
+  background-color: #F5F5F5;
   padding-bottom: 3%;
 }
 @media (max-width: 500px) {
@@ -311,11 +354,15 @@ li {
   text-align: center;
   padding: 3% 0;
   color: #c3b299;
+  font-family: "Amita", serif;
+  font-size: 2.6rem;
 }
 .container #contact li {
   text-align: center;
   text-decoration: none;
   padding: 1% 0;
+  font-family: 'Solway', serif;
+  font-size: 1.8rem;
 }
 @media (max-width: 500px) {
   .container #contact li {

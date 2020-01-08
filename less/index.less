@@ -61,14 +61,6 @@ html {
 	font-size: 62.5%;
 	
 }
-h1, h2, h3, h4, h5, h6 {
-	font-family: 'Amita', cursive;
-	font-size: 2.4rem;
-}
-p, li {
-	font-family: 'Solway', serif;
-	font-size: 1.8rem;
-}
 
 .container{
 	width: 80%;
@@ -76,6 +68,12 @@ p, li {
 }
 // Begin styling
 @main-color: #c3b299;
+@h1: 2.8rem;
+@h2: 2.6rem;
+@h3: 2.2rem;
+@p: 1.8rem;
+@p-font: 'Solway', serif;
+@h-font: "Amita", serif;
 //mixins
 .flex-center {
 	display: flex;
@@ -87,11 +85,12 @@ p, li {
 	color: #ffffff;
 }
 .secondary-color{
-	background-color: #DCDCDC;
+	background-color: #F5F5F5;
 }
 .heading-adjust {
 	text-align: center;
-	padding: 3% 0;  
+	padding: 3% 0;
+	
   }
   
 // end mixins
@@ -106,6 +105,8 @@ header {//begin header styling
 	nav {//begin nav style
 		display: flex;
 		justify-content: space-evenly;
+		font-family: @p-font;
+		font-size: @p;
 		@media (max-width: 500px){
 			flex-direction: column;
 			align-items: center;
@@ -113,7 +114,7 @@ header {//begin header styling
 		}
 		a {//begin link stlye
 			color: #ffffff;
-			width: 24%;
+			width: 19%;
 			text-decoration: none;
 			font-size: 1.6rem;
 			margin-top: 3%;
@@ -151,6 +152,13 @@ header {//begin header styling
 		h1 {
 			.heading-adjust();
 			color: @main-color;
+			font-family: @h-font;
+			font-size: @h1;
+
+		}
+		p{
+			font-family: @p-font;
+			font-size: @p;
 		}
 	}	
 }//end intro section stlye
@@ -158,6 +166,8 @@ header {//begin header styling
 	h2 {
 		.heading-adjust();
 		color: @main-color;
+		font-family: @h-font;
+		font-size: @h2;
 		@media (max-width: 500px){
 			padding: 5% 0;
 			
@@ -166,6 +176,8 @@ header {//begin header styling
 	}
 	p{
 		text-align: center;
+		font-family:@p-font;
+		font-size: @p;
 		margin: 2% 3%;
 		@media (max-width: 500px){
 			margin-bottom: 5%;
@@ -183,6 +195,8 @@ header {//begin header styling
 	h2 { //begin h2 style
 		.heading-adjust();
 		color: @main-color;
+		font-family: @h-font;
+		font-size: @h2;
 		@media (max-width: 500px){
 			padding: 5% 0;
 		}
@@ -190,8 +204,11 @@ header {//begin header styling
 	}//end h2 style
 	ul {//begin list style
 		width: 80%;
-    	text-align: center;
+		text-align: center;
+		font-family: @p-font;
+		font-size: @p;
 	li {//begin list item style
+		.flex-center();
 		padding: 1% 1% 2% 0;
 		color: #000000;
 		font-weight: bold;
@@ -200,11 +217,48 @@ header {//begin header styling
 		}
 		i {
 			color: #c3b299;
+			padding-right: 2%;
 		}
 	}//end list item style
 }//end list style
 }//end of skills styles
+#work {//begin work styles
+	padding-bottom: 3%;
+	h2{//begin  h2 styles
+		.heading-adjust();
+		font-family: @h-font;
+		font-size: @h2;
+		color: @main-color;
+	}//end h2 styles
+	h3{//begin h3 styles
+		font-family: @h-font;
+		font-size: @h3;
+		padding-bottom: 1%;
+	}//emd h3 styles
+	p {//begin styles
+		font-family: @p-font;
+		font-size: @p;
+		padding-bottom: 2%;
+	}//end p, ul styles
+	ul {//begin ul styling
+		font-family: @p-font;
+		font-size: @p;
+		list-style-type: disc;
+		list-style-position: inside;
+	}//end ul styling
+	li{
+		padding-bottom: 1%;
+	}
+	.exp1 {
+		padding-bottom: 3%;
+		margin: 0 2%;
+	}
+	.exp2 {
+		margin: 0 2%;
+	}
+}//end work styles
 #contact {//begin contact styles
+	.secondary-color();
 	padding-bottom: 3%;
 	@media (max-width: 500px){
 		padding-bottom: 5%;
@@ -213,11 +267,15 @@ header {//begin header styling
 		h2 {
 		.heading-adjust();
 		color: @main-color;
+		font-family: @h-font;
+		font-size: @h2;
 	}
 	li {
 		text-align: center;
 		text-decoration: none;
 		padding: 1% 0;
+		font-family: @p-font;
+		font-size: @p;
 		@media (max-width: 500px){
 			padding-bottom: 3%;
 		}
